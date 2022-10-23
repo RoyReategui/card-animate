@@ -1,0 +1,7 @@
+
+@function fraccion_Em($value){
+    @if(type-of($value) == number){
+        @return  calc($value/10)*2;
+    }
+    @return null;
+}

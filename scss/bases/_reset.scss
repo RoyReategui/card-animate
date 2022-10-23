@@ -1,0 +1,27 @@
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgColor-body);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--title-color);
+}
+article{
+    background-color: var(--bgColor-card);
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

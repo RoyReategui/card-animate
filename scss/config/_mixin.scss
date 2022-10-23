@@ -1,0 +1,12 @@
+@import "helpers";
+
+@mixin generate( $params, $cont:true){
+    
+    @if(length($params) >=1){
+      @each $key,$value in $params {
+            .#{$key}-#{$cont}{
+                #{$value}:#{fraccion_Em($cont)}em;
+            }
+        }
+    }
+}

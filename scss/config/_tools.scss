@@ -1,0 +1,26 @@
+@import "helpers";
+@import "mixin";
+
+
+$paddings : (
+    p : padding,
+    pl : padding-left,
+    pt : padding-top,
+    pb : padding-bottom,
+    pr : padding-right
+);
+
+$margins : (
+    m : margin,
+    ml : margin-left,
+    mt : margin-top,
+    mb : margin-bottom,
+    mr : margin-right
+);
+
+@for $i from 1 through 5 {
+    @include generate( $paddings, $i );
+    @include generate( $margins, $i );
+    // .p-#{$i}{
+    //     padding:#{mitad($i)}em ;
+}

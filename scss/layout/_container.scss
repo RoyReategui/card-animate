@@ -1,0 +1,16 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: var(--bgColor-body);
+}
+
+.container--dark{
+    --bgColor-body : var(--bgColor-body-dark);
+    --bgColor-card: var(--bgColor-card);
+    --title-color: var(--title-color-dark);
+    --text-color : var(--text-color-dark);
+    --bgtooltip : var(--bgtooltip-dark);
+    --shadow-color: var(--shadow-color-dark);
+}
